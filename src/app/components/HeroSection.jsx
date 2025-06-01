@@ -84,7 +84,7 @@ export default function HeroSection() {
 
         const getSpotsCount = () => {
             const heroRect = heroElement.getBoundingClientRect();
-            return Math.max(5, Math.floor((heroRect.width * heroRect.height) / 200000));
+            return Math.max(5, Math.floor((heroRect.width * heroRect.height) / 100000));
         };
 
         const animationLoop = (currentTime) => {
