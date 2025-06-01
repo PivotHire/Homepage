@@ -54,13 +54,12 @@ export default function FeaturesSection() {
                     In 2024, there are an estimated 76.4 million freelancers in the U.S., accounting for approximately 36% of the U.S. workforce.
                     <br/>
                     <br/>
-                    However, freelancing systems remain largely unchanged, resulting in a fundamental mismatch: platforms provide poor matches, corporations waste time on sourcing the right hire, freelancers face wage theft while being unprotected.
+                    However, outdated freelancing systems lead to poor matches, wasted hiring time, and unprotected freelancers facing wage theft.
                     <br/>
                     <br/>
-                    Low efficiency. Low trust. Low sustainability. Current freelancing patterns will eventually fail under its own weight.
+                    Low efficiency. Low trust. Low sustainability.
                     <br/>
-                    <br/>
-                    PivotHire addresses the issues by introducing an AI-empowered freelancing platform featuring recommendation and matching algorithms with confidential and legal protection to maximize the efficiency and reliability of freelancing.
+                    Current freelancing patterns will eventually fail under its own weight.
                 </p>
                 <div className={styles.featuresGrid}>
                     {featuresData.map((feature) => (

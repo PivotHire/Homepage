@@ -3,24 +3,69 @@
 @keyframes floatDown {
     from {
         opacity: 0;
-        transform: translateY(-25px); // 从上方25px处开始
+        transform: translateY(-25px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);    // 移动到原始位置
+        transform: translateY(0);
     }
 }
 
 @keyframes floatUp {
     from {
         opacity: 0;
-        transform: translateY(25px);  // 从下方25px处开始
+        transform: translateY(25px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);     // 移动到原始位置
+        transform: translateY(0);
     }
 }
+
+@keyframes breathingGlow {
+    0% {
+        text-shadow: 0 0 3px rgba($text-light, 0.6),
+        0 0 8px rgba($text-light, 0.4),
+        0 0 12px rgba($accent-color, 0.2);
+    }
+    50% {
+        text-shadow: 0 0 6px rgba($text-light, 0.8),
+        0 0 15px rgba($text-light, 0.6),
+        0 0 20px rgba($accent-color, 0.4);
+    }
+    100% {
+        text-shadow: 0 0 3px rgba($text-light, 0.6),
+        0 0 8px rgba($text-light, 0.4),
+        0 0 12px rgba($accent-color, 0.2);
+    }
+}
+
+@keyframes spot-animation {
+    0% {
+        left: calc(var(--from-x) - var(--radius-spot));
+        top: calc(var(--from-y) - var(--radius-spot));
+    }
+    100% {
+        left: calc(var(--to-x) - var(--radius-spot));
+        top: calc(var(--to-y) - var(--radius-spot));
+    }
+}
+
+@keyframes spot-fade {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.5;
+    }
+    85% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 
 .heroContainer {
     display: flex;
@@ -32,6 +77,32 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+}
+
+.dynamicBgContainer {
+    --hero-bg-radius: 80px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    filter: blur(var(--hero-bg-radius));
+    z-index: 0;
+    overflow: hidden;
+}
+
+.spot {
+    width: calc(2 * var(--radius-spot));
+    height: calc(2 * var(--radius-spot));
+    position: absolute;
+    background-image: radial-gradient(var(--color));
+    border-radius: 50%;
+    opacity: 0;
+    animation: spot-animation var(--duration) linear,
+    spot-fade var(--duration) linear;
+    will-change: transform, opacity, left, top;
 }
 
 .heroContent {
@@ -48,12 +119,18 @@
     margin-bottom: 1rem;
     line-height: 1.2;
 
+    text-shadow: 0 0 5px rgba($text-light, 0.7),
+    0 0 10px rgba($text-light, 0.5),
+    0 0 15px rgba($accent-color, 0.3);
+
     opacity: 0;
-    animation-name: floatDown;
-    animation-duration: 0.75s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-    animation-delay: 0.25s;
+    animation-name: floatDown, breathingGlow;
+    animation-duration: 0.75s, 3s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-fill-mode: forwards, none;
+    animation-delay: 0.25s, 0s;
+    animation-iteration-count: 1, infinite;
+    animation-direction: normal, alternate;
 
     @media (min-width: $breakpoint-md) {
         font-size: 4rem;
