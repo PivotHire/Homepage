@@ -15,8 +15,7 @@ export default function NavBar() {
             <div className={styles.navContainer}>
                 <div className={styles.logo}>
                     <a onClick={() => scrollToSection('hero')} style={{cursor: 'pointer'}}>
-                        PivotHire AI
-                        {/* <img src="/logo.png" /> */}
+                        <img src="/logo-dark-transparent.png"  alt={'logo-dark'} />
                     </a>
                 </div>
                 <ul className={styles.navLinks}>

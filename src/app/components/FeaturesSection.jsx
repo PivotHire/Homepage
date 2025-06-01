@@ -13,7 +13,7 @@ const PlaceholderIcon = ({ style }) => (
         color: '#888',
         ...style
     }}>
-        ★ {/* Example icon */}
+        ★
     </div>
 );
 
