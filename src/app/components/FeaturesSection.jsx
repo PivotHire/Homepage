@@ -22,26 +22,26 @@ const featuresData = [
     {
         id: '01',
         icon: <PlaceholderIcon />,
-        title: '111',
-        description: '111',
+        title: 'AI-Driven Core Algorithms',
+        description: 'PivotHire AI\'s AI agent analyzes project needs and talent profiles (evaluating key requirements and performance metrics) for optimal recruiter matches. We streamline the hiring process.',
     },
     {
         id: '02',
-        icon: <PlaceholderIcon style={{ color: '#777' }} />,
-        title: '222',
-        description: '222',
+        icon: <PlaceholderIcon />,
+        title: 'Building Trust Through Quality',
+        description: 'All corporations undergo legal authorization and background checks before recruiting. Similarly, all freelancers must pass skills tests before working with PivotHire AI. ',
     },
     {
         id: '03',
         icon: <PlaceholderIcon />,
-        title: '333',
-        description: '333',
+        title: 'Confidentiality Matters',
+        description: 'Corporations and freelancers sign binding agreements through the PivotHire AI platform to ensure strict confidentiality. We safeguard your intellectual property.',
     },
     {
         id: '04',
         icon: <PlaceholderIcon />,
-        title: '444',
-        description: '444',
+        title: 'Multiple Application Scenarios',
+        description: 'PivotHire AI expands the boundaries of freelancing by enabling seamless integration across industries, roles, and regions. We power flexible, global collaboration.',
     },
 ];
 

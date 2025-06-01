@@ -15,7 +15,15 @@ export default function NavBar() {
             <div className={styles.navContainer}>
                 <div className={styles.logo}>
                     <a onClick={() => scrollToSection('hero')} style={{cursor: 'pointer'}}>
-                        <img src="/logo-dark-transparent.png"  alt={'logo-dark'} />
+                        <picture>
+                            <source media="(max-width: 768px)" srcSet="/pivothire-icon-dark-transparent.png" />
+                            <source srcSet="/logo-dark-transparent.png" />
+                            <img
+                                src="/logo-dark-transparent.png"
+                                alt="logo-dark"
+                                className={styles.logoImage}
+                            />
+                        </picture>
                     </a>
                 </div>
                 <ul className={styles.navLinks}>
