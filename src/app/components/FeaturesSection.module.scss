@@ -1,0 +1,129 @@
+@import '../../styles/variables';
+
+.featuresSection {
+    padding: $section-padding-y $section-padding-x;
+    background-color: $secondary-dark;
+    text-align: center;
+}
+
+.container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+}
+
+.sectionTitle {
+    font-family: $font-heading;
+    font-size: 2.5rem;
+    color: $text-light;
+    margin-bottom: 0.75rem;
+
+    @media (min-width: $breakpoint-md) {
+        font-size: 3rem;
+    }
+}
+
+.sectionSubtitle {
+    font-family: $font-body;
+    font-size: 1.1rem;
+    color: $text-secondary;
+    margin-bottom: 4rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: $breakpoint-md) {
+        font-size: 1.2rem;
+    }
+}
+
+.featuresGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+
+    @media (min-width: $breakpoint-md) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+.featureItem {
+    background-color: $primary-dark;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    text-align: left; // Align text to left within the card
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.featureHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.featureIcon {
+    margin-right: 1rem;
+}
+
+.featureNumber {
+    font-family: $font-heading;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba($accent-color, 0.5);
+    line-height: 1;
+}
+
+.featureTitle {
+    font-family: $font-heading;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $text-light;
+    margin-bottom: 0.75rem;
+}
+
+.featureDescription {
+    font-family: $font-body;
+    font-size: 0.95rem;
+    color: $text-secondary;
+    line-height: 1.7;
+}
+
+.ctaContainer {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.ctaButton {
+    font-family: $font-heading;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: $accent-color;
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        background-color: $accent-hover-color;
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+    }
+}

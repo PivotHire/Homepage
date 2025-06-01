@@ -1,0 +1,92 @@
+@import '../../styles/variables';
+
+.heroContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: $section-padding-y $section-padding-x;
+    background-color: $primary-dark;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroContent {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.title {
+    font-family: $font-heading;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $text-light;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+
+    @media (min-width: $breakpoint-md) {
+        font-size: 4rem;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+        font-size: 4.5rem;
+    }
+}
+
+.tagline {
+    font-family: $font-body;
+    font-size: 1.1rem;
+    color: $text-secondary;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: $breakpoint-md) {
+        font-size: 1.25rem;
+    }
+}
+
+.ctaButton {
+    font-family: $font-heading;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: $accent-color;
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        background-color: $accent-hover-color;
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+    }
+
+    @media (min-width: $breakpoint-md) {
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+// .heroBackground {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-image: url('/path-to-your-subtle-background.svg');
+//   background-size: cover;
+//   opacity: 0.05;
+//   z-index: 0;
+// }

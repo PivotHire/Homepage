@@ -1,0 +1,50 @@
+@import '../../styles/variables';
+
+.footer {
+    background-color: $primary-dark;
+    padding: 2rem $section-padding-x;
+    border-top: 1px solid rgba($text-secondary, 0.1);
+    text-align: center;
+}
+
+.footerContent {
+    max-width: $container-max-width;
+    margin: 0 auto;
+}
+
+.copyrightText {
+    font-family: $font-body;
+    font-size: 0.85rem;
+    color: $text-secondary;
+    margin: 0;
+
+    @media (min-width: $breakpoint-md) {
+        font-size: 0.9rem;
+    }
+}
+
+.footerLinks {
+    margin-top: 0.75rem;
+
+    .link {
+        font-family: $font-body;
+        font-size: 0.8rem;
+        color: $text-secondary;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $accent-color;
+            text-decoration: underline;
+        }
+
+        @media (min-width: $breakpoint-md) {
+            font-size: 0.85rem;
+        }
+    }
+
+    .linkSeparator {
+        color: $text-secondary;
+        margin: 0 0.5rem;
+    }
+}

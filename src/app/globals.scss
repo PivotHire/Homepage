@@ -1,0 +1,20 @@
+// app/globals.scss
+@import '../styles/variables';
+
+html {
+    scroll-behavior: smooth;
+    //scroll-padding-top: 50px;
+}
+
+body {
+    background-color: $primary-dark;
+    color: $text-light;
+    font-family: $font-body;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: $font-heading;
+}
