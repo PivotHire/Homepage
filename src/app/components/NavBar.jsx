@@ -2,9 +2,9 @@
 'use client'; // Required for onClick client-side interactions (scrolling)
 
 import Link from 'next/link'; // Good for potential future actual page links, though we use onClick for scrolling here
-import styles from './Navbar.module.scss';
+import styles from './NavBar.module.scss';
 
-export default function Navbar() {
+export default function NavBar() {
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
         if (section) {
