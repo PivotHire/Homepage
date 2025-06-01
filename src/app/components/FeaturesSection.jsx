@@ -49,9 +49,18 @@ export default function FeaturesSection() {
     return (
         <section id="features" className={styles.featuresSection}>
             <div className={styles.container}>
-                <h2 className={styles.sectionTitle}>Why Choose Us?</h2>
+                <h2 className={styles.sectionTitle}>Why Us?</h2>
                 <p className={styles.sectionSubtitle}>
-                    Discover the core advantages that set our project apart from the rest.
+                    In 2024, there are an estimated 76.4 million freelancers in the U.S., accounting for approximately 36% of the U.S. workforce.
+                    <br/>
+                    <br/>
+                    However, freelancing systems remain largely unchanged, resulting in a fundamental mismatch: platforms provide poor matches, corporations waste time on sourcing the right hire, freelancers face wage theft while being unprotected.
+                    <br/>
+                    <br/>
+                    Low efficiency. Low trust. Low sustainability. Current freelancing patterns will eventually fail under its own weight.
+                    <br/>
+                    <br/>
+                    PivotHire addresses the issues by introducing an AI-empowered freelancing platform featuring recommendation and matching algorithms with confidential and legal protection to maximize the efficiency and reliability of freelancing.
                 </p>
                 <div className={styles.featuresGrid}>
                     {featuresData.map((feature) => (

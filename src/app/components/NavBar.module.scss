@@ -87,28 +87,22 @@
     }
 }
 
-.navCtaButton {
-    font-family: $font-heading;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #fff;
-    background-color: $accent-color;
-    border: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-
-    &:hover {
-        background-color: $accent-hover-color;
-        transform: translateY(-1px);
+.githubLink {
+    display: inline-block;
+    color: $text-light;
+    .githubIcon {
+        width: 1.5rem;
+        height: 1.5rem;
+        opacity: 1;
+        transition-property: opacity;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
     }
 
-    @media (max-width: $breakpoint-md) {
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
+    &:hover {
+        .githubIcon {
+            opacity: 0.5;
+        }
     }
 }
 

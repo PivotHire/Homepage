@@ -1,5 +1,27 @@
 @import '../../styles/variables';
 
+@keyframes floatDown {
+    from {
+        opacity: 0;
+        transform: translateY(-25px); // 从上方25px处开始
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);    // 移动到原始位置
+    }
+}
+
+@keyframes floatUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);  // 从下方25px处开始
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);     // 移动到原始位置
+    }
+}
+
 .heroContainer {
     display: flex;
     align-items: center;
@@ -26,6 +48,13 @@
     margin-bottom: 1rem;
     line-height: 1.2;
 
+    opacity: 0;
+    animation-name: floatDown;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.25s;
+
     @media (min-width: $breakpoint-md) {
         font-size: 4rem;
     }
@@ -44,6 +73,13 @@
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+
+    opacity: 0;
+    animation-name: floatDown;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
 
     @media (min-width: $breakpoint-md) {
         font-size: 1.25rem;
@@ -64,13 +100,15 @@
     letter-spacing: 0.5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 
+    opacity: 0;
+    animation-name: floatUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.75s;
+
     &:hover {
         background-color: $accent-hover-color;
-        transform: translateY(-2px);
-    }
-
-    &:active {
-        transform: translateY(-1px);
     }
 
     @media (min-width: $breakpoint-md) {
@@ -85,7 +123,7 @@
 //   left: 0;
 //   width: 100%;
 //   height: 100%;
-//   background-image: url('/path-to-your-subtle-background.svg');
+//   background-image: url('/background.svg');
 //   background-size: cover;
 //   opacity: 0.05;
 //   z-index: 0;
