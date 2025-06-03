@@ -26,7 +26,7 @@ const teamMembers = [
         id: 2,
         name: 'Kevin Zhong',
         role: 'Co-Founder & CIO',
-        // imageUrl: '/images/b.jpg',
+        imageUrl: '/avatar/kz.png',
         bio: 'Manages the company\'s IT systems and infrastructure, ensuring data security and operational efficiency.',
         li: 'https://www.linkedin.com/in/clckkkkk/',
     },
