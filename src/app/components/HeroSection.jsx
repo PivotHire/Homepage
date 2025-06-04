@@ -141,11 +141,11 @@ export default function HeroSection() {
                 <p className={styles.tagline}>
                     The AI-driven freelancing platform for hiring match.
                 </p>
-                <a href={'mailto:core@pivothire.tech?subject=Demo Request for PivotHire'}>
+                <a href={'https://demo.pivothire.tech/'}>
                     <button
                         className={styles.ctaButton}
                     >
-                        Request a Demo
+                        Get Started
                     </button>
                 </a>
             </div>
