@@ -1,6 +1,7 @@
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import './globals.scss';
+import GlobalDynamicBackground from "@/app/components/GlobalDynamicBackground";
 
 export const metadata = {
     title: {
@@ -54,6 +55,7 @@ export default function RootLayout({children}) {
     return (
         <html lang="en">
         <body>
+        <GlobalDynamicBackground />
         <NavBar/>
         <main>{children}</main>
         <Footer/>

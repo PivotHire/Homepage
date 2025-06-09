@@ -1,9 +1,8 @@
 @import '../../styles/variables';
 
 .featuresSection {
-    padding: $section-padding-y $section-padding-x;
-    background-color: $secondary-dark;
-    text-align: center;
+    padding: $section-padding-y * 2 $section-padding-x;
+    background-color: $primary-dark;
 }
 
 .container {
@@ -11,119 +10,122 @@
     margin: 0 auto;
 }
 
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 8rem auto;
+}
+
 .sectionTitle {
-    font-family: $font-heading;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 700;
     color: $text-light;
-    margin-bottom: 0.75rem;
-
-    @media (min-width: $breakpoint-md) {
-        font-size: 3rem;
-    }
-}
-
-.sectionSubtitle {
-    font-family: $font-body;
-    font-size: 1.1rem;
-    color: $text-secondary;
-    margin-bottom: 4rem;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-
-    @media (min-width: $breakpoint-md) {
-        font-size: 1.2rem;
-    }
-}
-
-.featuresGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-
-    @media (min-width: $breakpoint-md) {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-
-    @media (min-width: $breakpoint-lg) {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1.5rem;
-    }
-}
-
-.featureItem {
-    background-color: $primary-dark;
-    padding: 2rem 1.5rem;
-    border-radius: 8px;
-    text-align: left; // Align text to left within the card
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-    }
-}
-
-.featureHeader {
-    display: flex;
-    align-items: center;
     margin-bottom: 1.5rem;
 }
 
-.featureIcon {
-    margin-right: 1rem;
-}
-
-.featureNumber {
-    font-family: $font-heading;
-    font-size: 3rem;
-    font-weight: 700;
-    color: $accent-color;
-    line-height: 1;
-}
-
-.featureTitle {
-    font-family: $font-heading;
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: $text-light;
-    margin-bottom: 0.75rem;
-}
-
-.featureDescription {
-    font-family: $font-body;
-    font-size: 0.95rem;
+.sectionSubtitle {
+    font-size: 1.1rem;
     color: $text-secondary;
     line-height: 1.7;
 }
 
-.ctaContainer {
-    margin-top: 4rem;
+.featuresList {
+    display: flex;
+    flex-direction: column;
+}
+
+.featureItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+
+    &.reversed {
+        .featureContent {
+            order: 2;
+        }
+        .featureVisual {
+            order: 1;
+        }
+    }
+}
+
+.featureContent {
     text-align: center;
 }
 
-.ctaButton {
+.featureTitle {
     font-family: $font-heading;
-    font-size: 1rem;
+    font-size: 2.25rem;
     font-weight: 600;
-    color: #fff;
-    background-color: $accent-color;
-    border: none;
-    padding: 0.9rem 2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: $text-light;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    text-align: center;
+    white-space: nowrap;
+}
 
-    &:hover {
-        background-color: $accent-hover-color;
-        transform: translateY(-2px);
+.featureDescription {
+    font-size: 1rem;
+    color: $text-secondary;
+    line-height: 1.8;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featureVisual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.featureNumber {
+    position: absolute;
+    font-family: $font-heading;
+    font-size: 12rem;
+    font-weight: 700;
+    color: rgba($text-light, 0.05);
+    z-index: 0;
+     user-select: none;
+}
+
+.featureIcon {
+    z-index: 1;
+    transform: scale(1.5);
+}
+
+@media (max-width: $breakpoint-md) {
+    .featuresList {
+        gap: 6rem;
     }
 
-    &:active {
-        transform: translateY(-1px);
+    .featureItem {
+        grid-template-columns: 1fr;
+        text-align: center;
+
+        .featureVisual {
+            order: 1;
+            margin-bottom: 2rem;
+        }
+
+        .featureContent {
+            order: 2;
+        }
+    }
+
+    .featureDescription {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .featureNumber {
+        font-size: 8rem;
+    }
+
+    .featureTitle {
+        white-space: normal;
     }
 }

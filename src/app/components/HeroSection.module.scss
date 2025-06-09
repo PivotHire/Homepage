@@ -66,6 +66,58 @@
     }
 }
 
+@keyframes slideIn {
+    from {
+        transform: translateY(110%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-110%);
+        opacity: 0;
+    }
+}
+
+.title {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 0.25em;
+}
+
+.staticWord {
+}
+
+.rollingWrapper {
+    display: inline-block;
+    height: 1.2em;
+    line-height: 1.2em;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.rollingWordBase {
+    display: inline-block;
+}
+
+.enter {
+    composes: rollingWordBase;
+    animation: slideIn 0.5s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.exit {
+    composes: rollingWordBase;
+    animation: slideOut 0.5s forwards cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
 
 .heroContainer {
     display: flex;
@@ -73,23 +125,9 @@
     justify-content: center;
     min-height: 80vh;
     padding: $section-padding-y $section-padding-x;
-    background-color: $primary-dark;
+    background-color: transparent;
     text-align: center;
     position: relative;
-    overflow: hidden;
-}
-
-.dynamicBgContainer {
-    --hero-bg-radius: 80px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    filter: blur(var(--hero-bg-radius));
-    z-index: 0;
     overflow: hidden;
 }
 
@@ -133,11 +171,11 @@
     animation-direction: normal, alternate;
 
     @media (min-width: $breakpoint-md) {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     @media (min-width: $breakpoint-lg) {
-        font-size: 4.5rem;
+        font-size: 8rem;
     }
 }
 
@@ -147,7 +185,7 @@
     color: $text-secondary;
     margin-bottom: 2.5rem;
     line-height: 1.6;
-    max-width: 600px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 

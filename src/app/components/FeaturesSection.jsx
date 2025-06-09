@@ -1,22 +1,12 @@
+'use client';
+
 import styles from './FeaturesSection.module.scss';
 
 const PlaceholderIcon = ({ style }) => (
-    <div style={{
-        width: '50px',
-        height: '50px',
-        backgroundColor: 'rgba(255, 255, 255, 0.1)',
-        borderRadius: '50%',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontSize: '24px',
-        color: '#888',
-        ...style
-    }}>
+    <div style={{width: '50px', height: '50px', backgroundColor: 'rgba(255, 255, 255, 0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '24px', color: '#fff', ...style }}>
         ★
     </div>
 );
-
 
 const featuresData = [
     {
@@ -29,7 +19,7 @@ const featuresData = [
         id: '02',
         icon: <PlaceholderIcon />,
         title: 'Building Trust Through Quality',
-        description: 'All corporations undergo legal authorization and background checks before recruiting. Similarly, all freelancers must pass skills tests before working with PivotHire AI. ',
+        description: 'All corporations undergo legal authorization and background checks before recruiting. Similarly, all freelancers must pass skills tests before working with PivotHire AI.',
     },
     {
         id: '03',
@@ -49,27 +39,32 @@ export default function FeaturesSection() {
     return (
         <section id="features" className={styles.featuresSection}>
             <div className={styles.container}>
-                <h2 className={styles.sectionTitle}>Why Us?</h2>
-                <p className={styles.sectionSubtitle}>
-                    In 2024, there are an estimated 76.4 million freelancers in the U.S., accounting for approximately 36% of the U.S. workforce.
-                    <br/>
-                    <br/>
-                    However, outdated freelancing systems lead to poor matches, wasted hiring time, and unprotected freelancers facing wage theft.
-                    <br/>
-                    <br/>
-                    Low efficiency. Low trust. Low sustainability.
-                    <br/>
-                    Current freelancing patterns will eventually fail under its own weight.
-                </p>
-                <div className={styles.featuresGrid}>
-                    {featuresData.map((feature) => (
-                        <div key={feature.id} className={styles.featureItem}>
-                            <div className={styles.featureHeader}>
-                                <div className={styles.featureIcon}>{feature.icon}</div>
-                                <span className={styles.featureNumber}>{feature.id}</span>
+                <div className={styles.intro}>
+                    <h2 className={styles.sectionTitle}>Why Us?</h2>
+                    <p className={styles.sectionSubtitle}>
+                        In 2024, there are an estimated 76.4 million freelancers in the U.S., accounting for approximately 36% of the U.S. workforce. However, outdated freelancing systems lead to poor matches, wasted hiring time, and unprotected freelancers facing wage theft.
+                        <br />
+                        <br />
+                        Low efficiency. Low trust. Low sustainability.
+                        <br />
+                        <b>Current freelancing patterns will eventually fail under its own weight.</b>
+                    </p>
+                </div>
+
+                <div className={styles.featuresList}>
+                    {featuresData.map((feature, index) => (
+                        <div
+                            key={feature.id}
+                            className={`${styles.featureItem} ${index % 2 !== 0 ? styles.reversed : ''}`}
+                        >
+                            <div className={styles.featureContent}>
+                                <h3 className={styles.featureTitle}>{feature.title}</h3>
+                                <p className={styles.featureDescription}>{feature.description}</p>
                             </div>
-                            <h3 className={styles.featureTitle}>{feature.title}</h3>
-                            <p className={styles.featureDescription}>{feature.description}</p>
+                            <div className={styles.featureVisual}>
+                                <span className={styles.featureNumber}>{feature.id}</span>
+                                {/*<div className={styles.featureIcon}>{feature.icon}</div>*/}
+                            </div>
                         </div>
                     ))}
                 </div>

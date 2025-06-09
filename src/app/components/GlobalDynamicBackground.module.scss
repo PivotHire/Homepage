@@ -1,0 +1,50 @@
+@keyframes spot-animation {
+    0% {
+        left: calc(var(--from-x) - var(--radius-spot));
+        top: calc(var(--from-y) - var(--radius-spot));
+    }
+    100% {
+        left: calc(var(--to-x) - var(--radius-spot));
+        top: calc(var(--to-y) - var(--radius-spot));
+    }
+}
+
+@keyframes spot-fade {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.5;
+    }
+    85% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.spot {
+    width: calc(2 * var(--radius-spot));
+    height: calc(2 * var(--radius-spot));
+    position: absolute;
+    background-image: radial-gradient(var(--color));
+    border-radius: 50%;
+    opacity: 0;
+    animation: spot-animation var(--duration) linear,
+    spot-fade var(--duration) linear;
+    will-change: transform, opacity, left, top;
+}
+
+.backgroundContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+
+    filter: blur(var(--hero-bg-radius, 80px));
+}
