@@ -40,6 +40,9 @@
     align-items: center;
     gap: 4rem;
 
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+
     &.reversed {
         .featureContent {
             order: 2;

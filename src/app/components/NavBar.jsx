@@ -1,6 +1,7 @@
 'use client';
 
 import styles from './NavBar.module.scss';
+import {useRouter} from "next/navigation";
 
 export default function NavBar() {
     const scrollToSection = (sectionId) => {
@@ -10,11 +11,13 @@ export default function NavBar() {
         }
     };
 
+    const router = useRouter();
+
     return (
         <nav className={styles.navbar}>
             <div className={styles.navContainer}>
                 <div className={styles.logo}>
-                    <a onClick={() => scrollToSection('hero')} style={{cursor: 'pointer'}}>
+                    <a onClick={() => router.push('/')} style={{cursor: 'pointer'}}>
                         <picture>
                             <source media="(max-width: 768px)" srcSet="/pivothire-icon-dark-transparent.png" />
                             <source srcSet="/logo-dark-transparent.png" />

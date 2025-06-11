@@ -6,10 +6,10 @@ import GlobalDynamicBackground from "@/app/components/GlobalDynamicBackground";
 export const metadata = {
     title: {
         template: '%s | PivotHire AI',
-        default: 'PivotHire AI - Revolutionary freelancing platform',
+        default: 'PivotHire AI - Revolutionary Freelancing Platform',
     },
 
-    description: 'The AI-driven freelancing platform for hiring match. Request a demo today!',
+    description: 'The AI-driven freelancing platform for hiring match. Get started today!',
 
     keywords: ['startup', 'tech', 'hiring', 'labor market', 'HR', 'AI', 'freelancing', 'job matching'],
 
@@ -20,8 +20,8 @@ export const metadata = {
     publisher: 'PivotHire AI',
 
     openGraph: {
-        title: 'PivotHire AI - Revolutionary freelancing platform',
-        description: 'The AI-driven freelancing platform for hiring match. Request a demo today!',
+        title: 'PivotHire AI - Revolutionary Freelancing Platform',
+        description: 'The AI-driven freelancing platform for hiring match. Get started today!',
         url: 'https://www.pivothire.tech/',
         siteName: 'PivotHire AI',
         images: [

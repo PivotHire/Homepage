@@ -1,5 +1,6 @@
 import styles from './TeamSection.module.scss';
 import Image from "next/image";
+import ScrollReveal from "@/app/components/ScrollReveal";
 
 const MemberImagePlaceholder = ({name}) => (
     <div className={styles.imagePlaceholder}>
@@ -44,34 +45,38 @@ export default function TeamSection() {
     return (
         <section id="team" className={styles.teamSection}>
             <div className={styles.container}>
-                <h2 className={styles.sectionTitle}>Meet Our Team</h2>
-                <p className={styles.sectionSubtitle}>
-                    The founding members include top-finishers in competitive programming and student researchers in
-                    engineering, algorithms, and physics. We are a close-knit team with a mission to build the best
-                    hiring match.
-                </p>
+                <ScrollReveal>
+                    <h2 className={styles.sectionTitle}>Meet Our Team</h2>
+                    <p className={styles.sectionSubtitle}>
+                        The founding members include top-finishers in competitive programming and student researchers in
+                        engineering, algorithms, and physics. We are a close-knit team with a mission to build the best
+                        hiring match.
+                    </p>
+                </ScrollReveal>
                 <div className={styles.teamGrid}>
                     {teamMembers.map((member) => (
-                        <div key={member.id} className={styles.teamMemberCard}>
-                            {member.imageUrl ? (
-                                <Image
-                                    src={member.imageUrl}
-                                    alt={member.name}
-                                    width={120}
-                                    height={120}
-                                    className={styles.memberImage}
-                                />
-                            ) : (
-                                <MemberImagePlaceholder name={member.name}/>
-                            )}
-                            <h3 className={styles.memberName}>{member.name}</h3>
-                            <p className={styles.memberRole}>{member.role}</p>
-                            {member.bio && <p className={styles.memberBio}>{member.bio}</p>}
-                            <div className={styles.socialLinks}>
-                                <a href={member.li} target="_blank" rel="noopener noreferrer"
-                                   aria-label={`${member.name} on LinkedIn`}>LinkedIn Page</a>
+                        <ScrollReveal key={member.id}>
+                            <div key={member.id} className={styles.teamMemberCard}>
+                                {member.imageUrl ? (
+                                    <Image
+                                        src={member.imageUrl}
+                                        alt={member.name}
+                                        width={120}
+                                        height={120}
+                                        className={styles.memberImage}
+                                    />
+                                ) : (
+                                    <MemberImagePlaceholder name={member.name}/>
+                                )}
+                                <h3 className={styles.memberName}>{member.name}</h3>
+                                <p className={styles.memberRole}>{member.role}</p>
+                                {member.bio && <p className={styles.memberBio}>{member.bio}</p>}
+                                <div className={styles.socialLinks}>
+                                    <a href={member.li} target="_blank" rel="noopener noreferrer"
+                                       aria-label={`${member.name} on LinkedIn`}>LinkedIn Page</a>
+                                </div>
                             </div>
-                        </div>
+                        </ScrollReveal>
                     ))}
                 </div>
             </div>
