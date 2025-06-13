@@ -8,9 +8,9 @@ export default function PrivacyPolicyPage() {
     return (
         <div className={styles.ppContainer}>
             <h1 id="privacy-policy">Privacy Policy</h1>
-            <p>Last updated: June 11, 2025</p>
+            <p>Last updated: June 13, 2025</p>
             <h2 id="scope">Scope</h2>
-            <p>This privacy policy applies solely to visitors of the PivotHire AI homepage. It does not cover the PivorHire AI product (including demo), services, or application, which are governed by separate terms and privacy policies agreed upon during customer onboarding.</p>
+            <p>This privacy policy applies solely to visitors of the PivotHire AI homepage. It does not cover the PivorHire AI product, services, or application, which are governed by separate terms and privacy policies agreed upon during customer onboarding.</p>
             <h2 id="information-we-collect">Information We Collect</h2>
             <p>When you visit our homepage, we collect minimal information solely to improve your browsing experience:</p>
             <ul>

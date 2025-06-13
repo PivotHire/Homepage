@@ -21,7 +21,7 @@ export const metadata = {
 
     openGraph: {
         title: 'PivotHire AI - Revolutionary Freelancing Platform',
-        description: 'The AI-driven freelancing platform for hiring match. Get started today!',
+        description: 'PivotHire AI is building a high-trust network where quality-driven companies and skilled freelance professionals collaborate with confidence.',
         url: 'https://www.pivothire.tech/',
         siteName: 'PivotHire AI',
         images: [

@@ -34,7 +34,7 @@ export default function HeroSection() {
                     PivotHire AI is building a high-trust network where quality-driven companies and skilled freelance
                     professionals collaborate with confidence.
                 </p>
-                <a href={'https://demo.pivothire.tech/'}>
+                <a href={'https://app.pivothire.tech/'}>
                     <button className={styles.ctaButton}>
                         Get Started
                     </button>

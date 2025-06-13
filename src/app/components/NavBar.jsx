@@ -7,7 +7,7 @@ export default function NavBar() {
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
         if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
+            section.scrollIntoView({behavior: 'smooth'});
         }
     };
 
@@ -19,8 +19,8 @@ export default function NavBar() {
                 <div className={styles.logo}>
                     <a onClick={() => router.push('/')} style={{cursor: 'pointer'}}>
                         <picture>
-                            <source media="(max-width: 768px)" srcSet="/pivothire-icon-dark-transparent.png" />
-                            <source srcSet="/logo-dark-transparent.png" />
+                            <source media="(max-width: 768px)" srcSet="/pivothire-icon-dark-transparent.png"/>
+                            <source srcSet="/logo-dark-transparent.png"/>
                             <img
                                 src="/logo-dark-transparent.png"
                                 alt="logo-dark"
@@ -35,6 +35,9 @@ export default function NavBar() {
                     </li>
                     <li>
                         <a onClick={() => scrollToSection('features')}>Features</a>
+                    </li>
+                    <li>
+                        <a onClick={() => scrollToSection('preview')}>Jobs</a>
                     </li>
                     <li>
                         <a onClick={() => scrollToSection('team')}>Team</a>
