@@ -79,7 +79,6 @@
     font-size: 0.9rem;
     margin: -0.5rem 0 0.5rem 0;
 
-    // 新增：使用 flex 布局让图标和文字对齐
     display: flex;
     align-items: center;
     gap: 0.4rem;
@@ -91,9 +90,8 @@
     padding-bottom: 1rem;
     border-bottom: 1px solid rgba($text-light, 0.1);
 
-    // --- 新增/修改的样式 ---
-    flex-wrap: nowrap; // 禁止换行
-    overflow: hidden;  // 隐藏超出部分
+    flex-wrap: nowrap;
+    overflow: hidden;
 
     mask: linear-gradient(to right, black 85%, transparent 100%);
 }
