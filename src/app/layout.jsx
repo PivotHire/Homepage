@@ -9,7 +9,7 @@ export const metadata = {
         default: 'PivotHire AI - Revolutionary Freelancing Platform',
     },
 
-    description: 'The AI-driven freelancing platform for hiring match. Get started today!',
+    description: 'PivotHire AI is building a high-trust network where quality-driven companies and skilled freelance professionals collaborate with confidence.',
 
     keywords: ['startup', 'tech', 'hiring', 'labor market', 'HR', 'AI', 'freelancing', 'job matching'],
 
@@ -53,7 +53,7 @@ export const metadata = {
 
 export default function RootLayout({children}) {
     return (
-        <html lang="en">
+        <html lang="en" suppressHydrationWarning>
         <body>
         <GlobalDynamicBackground />
         <NavBar/>
