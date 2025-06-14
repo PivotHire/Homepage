@@ -2,11 +2,17 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import './globals.scss';
 import GlobalDynamicBackground from "@/app/components/GlobalDynamicBackground";
-import { Montserrat } from 'next/font/google';
+import { Montserrat, Roboto_Mono } from 'next/font/google';
 
 const montserrat = Montserrat({
     subsets: ['latin'],
     variable: '--font-montserrat',
+    display: 'swap',
+});
+
+const robotoMono = Roboto_Mono({
+    subsets: ['latin'],
+    variable: '--font-roboto-mono',
     display: 'swap',
 });
 
@@ -60,7 +66,7 @@ export const metadata = {
 
 export default function RootLayout({children}) {
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html lang="en" className={`${montserrat.variable} ${robotoMono.variable}`} suppressHydrationWarning>
         <body>
         <GlobalDynamicBackground />
         <NavBar/>

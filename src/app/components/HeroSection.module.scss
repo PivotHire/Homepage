@@ -151,7 +151,7 @@
 
 .title {
     font-family: $font-heading;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: $text-light;
     margin-bottom: 1rem;
@@ -171,21 +171,21 @@
     animation-direction: normal, alternate;
 
     @media (min-width: $breakpoint-md) {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     @media (min-width: $breakpoint-lg) {
-        font-size: 8rem;
+        font-size: 6rem;
     }
 }
 
 .tagline {
     font-family: $font-body;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: $text-secondary;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     line-height: 1.6;
-    max-width: 1000px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 
@@ -197,7 +197,7 @@
     animation-delay: 0.5s;
 
     @media (min-width: $breakpoint-md) {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -205,7 +205,7 @@
     font-family: $font-heading;
     cursor: pointer;
     text-transform: uppercase;
-    transition: box-shadow 0.1s ease, color 0.1s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
     position: relative;
 
     background-color: transparent;
@@ -216,42 +216,144 @@
     padding: 14px 20px;
     border-radius: 50px;
     border: 1px solid #fff3;
-    //box-shadow: 0 0 36px -15px #ffffff5e;
 
     &:hover {
-        //background-color: #fffd;
-        box-shadow: 0 0 36px -5px #ffffff;
+        background-color: $text-light;
+        color: $primary-dark;
     }
 
     @media (min-width: $breakpoint-md) {
         padding: 1rem 2.5rem;
         font-size: 1.1rem;
     }
+}
 
-    &::before {
+.previewScroller {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 2rem auto;
+    position: relative;
+
+    &::before,
+    &::after {
         content: '';
         position: absolute;
         top: 0;
-        left: 0;
-        width: 100%;
+        width: 200px;
         height: 100%;
-        border-radius: inherit;
-        background-color: $text-light;
-        z-index: -1;
-
-        clip-path: inset(0 100% 0 0);
-
-        transition: clip-path 0.1s ease-in-out;
+        z-index: 2;
+        pointer-events: none;
     }
 
-    &:hover {
-        color: $primary-dark;
-        transition-delay: 0.1s;
+    &::before {
+        left: 0;
+        background: linear-gradient(to right, 
+            rgba($primary-dark, 1) 0%,
+            rgba($primary-dark, 0.8) 20%,
+            rgba($primary-dark, 0) 100%
+        );
+    }
 
-        &::before {
-            clip-path: inset(0 0 0 0);
+    &::after {
+        right: 0;
+        background: linear-gradient(to left, 
+            rgba($primary-dark, 1) 0%,
+            rgba($primary-dark, 0.8) 20%,
+            rgba($primary-dark, 0) 100%
+        );
+    }
+
+    @media (max-width: $breakpoint-md) {
+        &::before,
+        &::after {
+            width: 100px;
         }
     }
+}
+
+.jobList {
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.jobCard {
+    padding: 1.25rem;
+    border-radius: 12px;
+    border: 1px solid rgba($text-light, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: left;
+    margin-right: 1rem;
+    background-color: rgba($primary-dark, 0.5);
+    backdrop-filter: blur(10px);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cardTitle {
+    font-size: 1.1rem;
+    color: $text-light;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.cardLocation {
+    color: $text-secondary;
+    font-size: 0.85rem;
+    margin: -0.25rem 0 0.25rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.cardSkills {
+    display: flex;
+    gap: 0.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba($text-light, 0.1);
+    flex-wrap: nowrap;
+    overflow: hidden;
+    mask: linear-gradient(to right, black 85%, transparent 100%);
+}
+
+.skillTag {
+    background-color: rgba($accent-color, 0.1);
+    color: $accent-color;
+    padding: 0.2rem 0.6rem;
+    border-radius: 16px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $text-secondary;
+    font-size: 0.85rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.cardBudget {
+    color: $text-light;
+    font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
 }
 
 // .heroBackground {
