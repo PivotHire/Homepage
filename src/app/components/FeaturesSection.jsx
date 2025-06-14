@@ -24,13 +24,13 @@ const featuresData = [
         id: '01',
         icon: <PlaceholderIcon/>,
         title: 'AI-Driven Core Algorithms',
-        description: 'PivotHire AI\'s AI agent analyzes project needs and talent profiles (evaluating key requirements and performance metrics) for optimal recruiter matches. We streamline the hiring process.',
+        description: 'PivotHire AI\'s AI agent analyzes project needs and talent profiles by evaluating key requirements and performance metrics for optimal recruiter matches. We streamline the hiring process.',
     },
     {
         id: '02',
         icon: <PlaceholderIcon/>,
         title: 'Building Trust Through Quality',
-        description: 'All corporations undergo legal authorization and background checks before recruiting. Similarly, all freelancers must pass skills tests before working with PivotHire AI.',
+        description: 'All corporations undergo legal authorization and background checks before recruiting. Similarly, all freelancers must pass skills tests before working with PivotHire AI. We protect both sides\' rights and safety.',
     },
     {
         id: '03',
@@ -52,7 +52,7 @@ export default function FeaturesSection() {
             <div className={styles.container}>
                 <div className={styles.intro}>
                     <ScrollReveal>
-                        <h2 className={styles.sectionTitle}>Why Us?</h2>
+                        <h2 className={styles.sectionTitle}>Features</h2>
                         <p className={styles.sectionSubtitle}>
                             In 2024, there are an estimated 76.4 million freelancers in the U.S., accounting for
                             approximately 36% of the U.S. workforce. However, outdated freelancing systems lead to poor
@@ -61,7 +61,7 @@ export default function FeaturesSection() {
                             <br/>
                             Low efficiency. Low trust. Low sustainability.
                             <br/>
-                            <b>Current freelancing patterns will eventually fail under its own weight.</b>
+                            <b>Traditional freelancing patterns will eventually fail under its own weight.<br/>PivotHire AI aims to reshape the freelancing market.</b>
                         </p>
                     </ScrollReveal>
                 </div>
