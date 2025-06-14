@@ -2,6 +2,13 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import './globals.scss';
 import GlobalDynamicBackground from "@/app/components/GlobalDynamicBackground";
+import { Montserrat } from 'next/font/google';
+
+const montserrat = Montserrat({
+    subsets: ['latin'],
+    variable: '--font-montserrat',
+    display: 'swap',
+});
 
 export const metadata = {
     title: {
