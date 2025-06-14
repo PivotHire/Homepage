@@ -95,16 +95,6 @@
     .githubIcon {
         width: 1.5rem;
         height: 1.5rem;
-        opacity: 1;
-        transition-property: opacity;
-        transition-duration: 300ms;
-        transition-timing-function: ease-in-out;
-    }
-
-    &:hover {
-        .githubIcon {
-            opacity: 0.5;
-        }
     }
 }
 
