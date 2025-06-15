@@ -2,11 +2,23 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import './globals.scss';
 import GlobalDynamicBackground from "@/app/components/GlobalDynamicBackground";
-import { Montserrat } from 'next/font/google';
+import { Geist, Geist_Mono, Roboto_Mono } from 'next/font/google';
 
-const montserrat = Montserrat({
+const geist = Geist({
     subsets: ['latin'],
-    variable: '--font-montserrat',
+    variable: '--font-geist',
+    display: 'swap',
+});
+
+const geistMono = Geist_Mono({
+    subsets: ['latin'],
+    variable: '--font-geist-mono',
+    display: 'swap',
+});
+
+const robotoMono = Roboto_Mono({
+    subsets: ['latin'],
+    variable: '--font-roboto-mono',
     display: 'swap',
 });
 
@@ -60,7 +72,7 @@ export const metadata = {
 
 export default function RootLayout({children}) {
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html lang="en" className={`${geist.variable} ${geistMono.variable} ${robotoMono.variable}`} suppressHydrationWarning>
         <body>
         <GlobalDynamicBackground />
         <NavBar/>

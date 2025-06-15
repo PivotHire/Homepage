@@ -1,16 +1,16 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 
 const blueShades = [
-    'rgba(0, 123, 255, 0.6)',
-    'rgba(170, 0, 111, 0.6)',
-    'rgba(0, 103, 227, 0.5)',
-    'rgba(29, 63, 211, 0.5)',
-    'rgba(200, 50, 255, 0.4)',
+    'rgba(0, 0, 0, 0)',
+    'rgba(0, 0, 0, 0)',
+    'rgba(0, 0, 0, 0)',
+    'rgba(0, 0, 0, 0)',
+    'rgba(0, 0, 0, 0)',
 ];
 
 const getRandomColor = () => blueShades[Math.floor(Math.random() * blueShades.length)];
 
-export function useDynamicSpots(containerRef, { initialSpotCount = 5, maxSpotDensity = 100000 } = {}) {
+export function useDynamicSpots(containerRef, { initialSpotCount = 0, maxSpotDensity = 100000 } = {}) {
     const [spots, setSpots] = useState([]);
     const rAFIdRef = useRef(null);
     const lastSpotCreationTimeRef = useRef(0);
