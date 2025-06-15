@@ -245,7 +245,7 @@
         pointer-events: none;
     }
 
-    &::before {
+        &::before {
         left: 0;
         background: linear-gradient(to right, 
             rgba($primary-dark, 1) 0%,

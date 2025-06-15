@@ -1,14 +1,15 @@
 // Colors
-$primary-dark: #121212;
-$secondary-dark: #1E1E1E;
+$primary-dark: #000000;
+$secondary-dark: #0A0A0A;
 $text-light: #EAEAEA;
 $text-secondary: #B0B0B0;
 $accent-color: #007BFF;
 $accent-hover-color: #0056b3;
 
 // Typography
-$font-heading: montserrat, Arial, sans-serif;
-$font-body: montserrat, sans-serif;
+$font-heading: var(--font-geist), Arial, sans-serif;
+$font-body: var(--font-geist), sans-serif;
+$font-mono: var(--font-geist-mono), monospace;
 
 // Spacing & Layout
 $section-padding-y: 5rem;

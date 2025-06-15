@@ -1,0 +1,151 @@
+// Base Typography
+body {
+  font-family: $font-body;
+  font-size: 16px;
+  line-height: 1.6;
+  color: $text-light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: $text-light;
+}
+
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: -0.02em;
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -0.01em;
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: 2rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: 1.75rem;
+  }
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+// Paragraphs
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+// Links
+a {
+  color: $accent-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: $accent-hover-color;
+  }
+}
+
+// Code
+code {
+  font-family: $font-mono;
+  font-size: 0.9em;
+  padding: 0.2em 0.4em;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+// Lists
+ul, ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Blockquotes
+blockquote {
+  border-left: 4px solid $accent-color;
+  padding-left: 1rem;
+  margin-left: 0;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: $text-secondary;
+}
+
+// Small text
+small {
+  font-size: 0.875rem;
+  color: $text-secondary;
+}
+
+// Text utilities
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-muted {
+  color: $text-secondary;
+}
+
+.text-accent {
+  color: $accent-color;
+}
+
+// Font weights
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+} 
