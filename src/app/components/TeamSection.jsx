@@ -18,7 +18,7 @@ const teamMembers = [
     {
         id: 1,
         name: 'Richard Liu',
-        role: 'Co-Founder & CMO',
+        role: 'Co-Founder',
         imageUrl: '/avatar/rl.jpg',
         bio: 'Develops and executes marketing strategies, responsible for brand building, user growth, and marketing campaigns.',
         li: 'https://www.linkedin.com/in/richard-yliu/',
@@ -26,7 +26,7 @@ const teamMembers = [
     {
         id: 2,
         name: 'Kevin Zhong',
-        role: 'Co-Founder & CIO',
+        role: 'Co-Founder',
         imageUrl: '/avatar/kz.png',
         bio: 'Manages the company\'s IT systems and infrastructure, ensuring data security and operational efficiency.',
         li: 'https://www.linkedin.com/in/clckkkkk/',
@@ -34,7 +34,7 @@ const teamMembers = [
     {
         id: 3,
         name: 'Konrad Pan',
-        role: 'Co-Founder & CTO',
+        role: 'Co-Founder',
         imageUrl: '/avatar/kp.jpg',
         bio: 'Leads the technology vision and product development, responsible for engineering team management.',
         li: 'https://www.linkedin.com/in/shuyang-pan-b45143352/',
