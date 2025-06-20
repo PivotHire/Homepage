@@ -17,10 +17,14 @@
 }
 
 .sectionTitle {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: $text-light;
     margin-bottom: 1.5rem;
+
+    @media (min-width: $breakpoint-md) {
+        font-size: 3rem;
+    }
 }
 
 .sectionSubtitle {
