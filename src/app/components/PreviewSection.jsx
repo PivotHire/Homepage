@@ -92,13 +92,6 @@ export default function PreviewSection() {
     const scrollWidth = (cardWidth + gap) * sampleJobs.length;
 
     return (
-        <section className={styles.previewSection} id="preview">
-            <div className={styles.container}>
-                <h2 className={styles.sectionTitle}>Explore Opportunities</h2>
-                <p className={styles.sectionSubtitle}>
-                    Discover your next chance. We connect skilled professionals with premier companies in a secure and collaborative ecosystem, where your expertise is truly valued.
-                </p>
-
                 <motion.div className={styles.scroller} >
                     <motion.ul
                         className={styles.jobList}
@@ -129,7 +122,5 @@ export default function PreviewSection() {
                         ))}
                     </motion.ul>
                 </motion.div>
-            </div>
-        </section>
     );
 }

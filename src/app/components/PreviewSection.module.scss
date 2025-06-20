@@ -2,7 +2,6 @@
 
 .previewSection {
     padding: $section-padding-y * 2 $section-padding-x;
-    background-color: $primary-dark;
     text-align: center;
 }
 
@@ -56,6 +55,8 @@
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-right: 1rem;
+    background-color: #fff1;
+    backdrop-filter: blur(5px);
 }
 
 .cardHeader {
@@ -98,7 +99,6 @@
     mask: linear-gradient(to right, black 85%, transparent 100%);
 }
 
-
 .skillTag {
     background-color: rgba($accent-color, 0.1);
     color: $accent-color;
@@ -115,6 +115,7 @@
     align-items: center;
     color: $text-secondary;
     font-size: 0.9rem;
+    font-family: geistMono, monospace;
 }
 
 .cardBudget {

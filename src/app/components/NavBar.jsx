@@ -37,9 +37,6 @@ export default function NavBar() {
                         <a onClick={() => scrollToSection('features')}>Features</a>
                     </li>
                     <li>
-                        <a onClick={() => scrollToSection('preview')}>Jobs</a>
-                    </li>
-                    <li>
                         <a onClick={() => scrollToSection('team')}>Team</a>
                     </li>
                 </ul>

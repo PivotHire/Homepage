@@ -8,7 +8,6 @@ export default function HomePage() {
         <>
             <HeroSection/>
             <FeaturesSection/>
-            <PreviewSection />
             <TeamSection/>
         </>
     );

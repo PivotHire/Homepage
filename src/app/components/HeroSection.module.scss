@@ -144,18 +144,18 @@
 }
 
 .heroContent {
-    max-width: $container-max-width;
+    max-width: 100%;
     margin: 0 auto;
     z-index: 1;
 }
 
 .title {
     font-family: $font-heading;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: $text-light;
     margin-bottom: 1rem;
-    line-height: 1.2;
+    line-height: 1;
 
     text-shadow: 0 0 5px rgba($text-light, 0.7),
     0 0 10px rgba($text-light, 0.5),
@@ -171,11 +171,11 @@
     animation-direction: normal, alternate;
 
     @media (min-width: $breakpoint-md) {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     @media (min-width: $breakpoint-lg) {
-        font-size: 8rem;
+        font-size: 6rem;
     }
 }
 
@@ -184,8 +184,8 @@
     font-size: 1.1rem;
     color: $text-secondary;
     margin-bottom: 2.5rem;
-    line-height: 1.6;
-    max-width: 1000px;
+    line-height: 1.5;
+    max-width: $container-max-width;
     margin-left: auto;
     margin-right: auto;
 
@@ -207,6 +207,7 @@
     text-transform: uppercase;
     transition: box-shadow 0.1s ease, color 0.1s ease;
     position: relative;
+    margin-top: 2.5rem;
 
     background-color: transparent;
     color: #fffd;

@@ -52,7 +52,7 @@ export default function FeaturesSection() {
             <div className={styles.container}>
                 <div className={styles.intro}>
                     <ScrollReveal>
-                        <h2 className={styles.sectionTitle}>Why Us?</h2>
+                        <h2 className={styles.sectionTitle}>Features</h2>
                         <p className={styles.sectionSubtitle}>
                             In 2024, there are an estimated 76.4 million freelancers in the U.S., accounting for
                             approximately 36% of the U.S. workforce. However, outdated freelancing systems lead to poor

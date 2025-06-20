@@ -3,6 +3,7 @@
 import styles from './HeroSection.module.scss';
 import { useRef } from 'react';
 import { useRollingText } from '@/hooks/useRollingText';
+import PreviewSection from "@/app/components/PreviewSection";
 
 const rollingWords = [
     'Evolved.',
@@ -31,9 +32,10 @@ export default function HeroSection() {
                     </span>
                 </h1>
                 <p className={styles.tagline}>
-                    PivotHire AI is building a high-trust network where quality-driven companies and skilled freelance
+                    PivotHire AI is building a high-trust network<br /> where quality-driven companies and skilled freelance
                     professionals collaborate with confidence.
                 </p>
+                <PreviewSection />
                 <a href={'mailto:core@pivothire.tech'}>
                     <button className={styles.ctaButton}>
                         Join Mailing List

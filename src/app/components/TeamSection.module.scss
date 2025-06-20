@@ -52,14 +52,16 @@
 }
 
 .teamMemberCard {
-    background-color: rgba($secondary-dark, 0.5);
     padding: 2rem 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-    height: 450px;
+    border: 1px solid rgba($text-light, 0.1);
+    //box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff1;
+    backdrop-filter: blur(5px);
 }
 
 .memberImage {
@@ -119,7 +121,7 @@
 }
 
 .socialLinks {
-    margin-top: auto;
+    margin: auto 0;
     padding-top: 1rem;
     display: flex;
     gap: 1rem;
