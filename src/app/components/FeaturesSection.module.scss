@@ -2,7 +2,7 @@
 
 .featuresSection {
     padding: $section-padding-y * 2 $section-padding-x;
-    background-color: $primary-dark;
+    //background-color: $primary-dark;
 }
 
 .container {
@@ -54,6 +54,7 @@
 
 .featureContent {
     text-align: center;
+    z-index: 1;
 }
 
 .featureTitle {

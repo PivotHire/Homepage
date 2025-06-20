@@ -3,8 +3,7 @@
 import styles from './FeaturesSection.module.scss';
 import ScrollReveal from "@/app/components/ScrollReveal";
 
-const PlaceholderIcon = ({style}) => (
-    <div style={{
+const PlaceholderIcon = ({style}) => (<div style={{
         width: '50px',
         height: '50px',
         backgroundColor: 'rgba(255, 255, 255, 0.1)',
@@ -16,39 +15,32 @@ const PlaceholderIcon = ({style}) => (
         color: '#fff', ...style
     }}>
         ★
-    </div>
-);
+    </div>);
 
-const featuresData = [
-    {
-        id: '01',
-        icon: <PlaceholderIcon/>,
-        title: 'AI-Driven Core Algorithms',
-        description: 'PivotHire AI\'s AI agent analyzes project needs and talent profiles (evaluating key requirements and performance metrics) for optimal recruiter matches. We streamline the hiring process.',
-    },
-    {
-        id: '02',
-        icon: <PlaceholderIcon/>,
-        title: 'Building Trust Through Quality',
-        description: 'All corporations undergo legal authorization and background checks before recruiting. Similarly, all freelancers must pass skills tests before working with PivotHire AI.',
-    },
-    {
-        id: '03',
-        icon: <PlaceholderIcon/>,
-        title: 'Confidentiality Matters',
-        description: 'Corporations and freelancers sign binding agreements through the PivotHire AI platform to ensure strict confidentiality. We safeguard your intellectual property.',
-    },
-    {
-        id: '04',
-        icon: <PlaceholderIcon/>,
-        title: 'Multiple Application Scenarios',
-        description: 'PivotHire AI expands the boundaries of freelancing by enabling seamless integration across industries, roles, and regions. We power flexible, global collaboration.',
-    },
-];
+const featuresData = [{
+    id: '01',
+    icon: <PlaceholderIcon/>,
+    title: 'AI-Driven Core Algorithms',
+    description: 'PivotHire AI\'s AI agent analyzes project needs and talent profiles by evaluating key requirements and performance metrics for optimal recruiter matches. We streamline the hiring process.',
+}, {
+    id: '02',
+    icon: <PlaceholderIcon/>,
+    title: 'Building Trust Through Quality',
+    description: 'All corporations undergo legal authorization and background checks before recruiting. Similarly, all freelancers must pass skills tests before working with PivotHire AI.',
+}, {
+    id: '03',
+    icon: <PlaceholderIcon/>,
+    title: 'Confidentiality Matters',
+    description: 'Corporations and freelancers sign binding agreements through the PivotHire AI platform to ensure strict confidentiality. We safeguard your intellectual property.',
+}, {
+    id: '04',
+    icon: <PlaceholderIcon/>,
+    title: 'Multiple Application Scenarios',
+    description: 'PivotHire AI expands the boundaries of freelancing by enabling seamless integration across industries, roles, and regions. We power flexible, global collaboration.',
+},];
 
 export default function FeaturesSection() {
-    return (
-        <section id="features" className={styles.featuresSection}>
+    return (<section id="features" className={styles.featuresSection}>
             <div className={styles.container}>
                 <div className={styles.intro}>
                     <ScrollReveal>
@@ -61,13 +53,12 @@ export default function FeaturesSection() {
                             <br/>
                             Low efficiency. Low trust. Low sustainability.
                             <br/>
-                            <b>Current freelancing patterns will eventually fail under its own weight.</b>
+                            <b>Current freelancing pattern will eventually fail under its own weight. </b>
                         </p>
                     </ScrollReveal>
                 </div>
                 <div className={styles.featuresList}>
-                    {featuresData.map((feature, index) => (
-                        <ScrollReveal key={feature.id}>
+                    {featuresData.map((feature, index) => (<ScrollReveal key={feature.id}>
                             <div
                                 key={feature.id}
                                 className={`${styles.featureItem} ${index % 2 !== 0 ? styles.reversed : ''}`}
@@ -81,11 +72,8 @@ export default function FeaturesSection() {
                                     {/*<div className={styles.featureIcon}>{feature.icon}</div>*/}
                                 </div>
                             </div>
-                        </ScrollReveal>
-                    ))}
+                        </ScrollReveal>))}
                 </div>
             </div>
-        </section>
-    )
-        ;
+        </section>);
 }
