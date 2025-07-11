@@ -30,7 +30,7 @@ const footerData = {
             title: 'Support',
             items: [
                 { text: 'Contact Us', href: 'mailto:core@pivothire.tech' },
-                { text: 'Join US', href: 'mailto:core@pivothire.tech' },
+                { text: 'Join Us', href: 'mailto:core@pivothire.tech' },
                 // { text: 'FAQ', href: '/faq' },
             ]
         },
