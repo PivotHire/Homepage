@@ -38,7 +38,7 @@ export default function HeroSection() {
                 <PreviewSection />
                 <a href={'mailto:core@pivothire.tech'}>
                     <button className={styles.ctaButton}>
-                        Join Mailing List
+                        Request a Demo
                     </button>
                 </a>
             </div>
