@@ -20,7 +20,7 @@ const teamMembers = [
         name: 'Richard Liu',
         role: 'Co-Founder',
         imageUrl: '/avatar/rl.jpg',
-        bio: 'Develops and executes marketing strategies, responsible for brand building, user growth, and marketing campaigns.',
+        bio: 'UC Berkeley (Class of 2029)',
         li: 'https://www.linkedin.com/in/richard-yliu/',
     },
     {
@@ -28,7 +28,7 @@ const teamMembers = [
         name: 'Kevin Zhong',
         role: 'Co-Founder',
         imageUrl: '/avatar/kz.png',
-        bio: 'Manages the company\'s IT systems and infrastructure, ensuring data security and operational efficiency.',
+        bio: 'University of Illinois Urbana-Champaign (Class of 2029)',
         li: 'https://www.linkedin.com/in/clckkkkk/',
     },
     {
@@ -36,7 +36,7 @@ const teamMembers = [
         name: 'Konrad Pan',
         role: 'Co-Founder',
         imageUrl: '/avatar/kp.jpg',
-        bio: 'Leads the technology vision and product development, responsible for engineering team management.',
+        bio: 'Cornell University (Class of 2029)',
         li: 'https://www.linkedin.com/in/shuyang-pan-b45143352/',
     },
 ];

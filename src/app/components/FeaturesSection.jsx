@@ -20,23 +20,23 @@ const PlaceholderIcon = ({style}) => (<div style={{
 const featuresData = [{
     id: '01',
     icon: <PlaceholderIcon/>,
-    title: 'AI-Driven Core Algorithms',
-    description: 'PivotHire AI\'s AI agent analyzes project needs and talent profiles by evaluating key requirements and performance metrics for optimal recruiter matches. We streamline the hiring process.',
+    title: 'Intelligent Central AI Agent',
+    description: 'Our AI agent analyzes project requirements and team capabilities to ensure optimal, data-driven pairings for successful delivery. The following project and progress management is also facilitated.',
 }, {
     id: '02',
     icon: <PlaceholderIcon/>,
-    title: 'Building Trust Through Quality',
-    description: 'All corporations undergo legal authorization and background checks before recruiting. Similarly, all freelancers must pass skills tests before working with PivotHire AI.',
+    title: 'Verified & Vetted Ecosystem',
+    description: 'We conduct rigorous legal verification for clients and multi-stage skill assessments for our delivery partners, creating a high-trust marketplace.',
 }, {
     id: '03',
     icon: <PlaceholderIcon/>,
-    title: 'Confidentiality Matters',
-    description: 'Corporations and freelancers sign binding agreements through the PivotHire AI platform to ensure strict confidentiality. We safeguard your intellectual property.',
+    title: 'Ironclad IP Protection',
+    description: 'The platform manages binding legal agreements and uses Web3 for immutable records, safeguarding your intellectual property throughout the project lifecycle and onwards.',
 }, {
     id: '04',
     icon: <PlaceholderIcon/>,
-    title: 'Multiple Application Scenarios',
-    description: 'PivotHire AI expands the boundaries of freelancing by enabling seamless integration across industries, roles, and regions. We power flexible, global collaboration.',
+    title: 'Borderless Collaboration',
+    description: 'Our platform is built for versatility, enabling seamless, project-based work across any industry, role, or region to power global innovation.',
 },];
 
 export default function FeaturesSection() {
