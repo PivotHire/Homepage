@@ -51,7 +51,7 @@ export default function FeaturesSection() {
                             matches, wasted hiring time, and unprotected freelancers facing wage theft.
                             <br/>
                             <br/>
-                            While new platforms focus on elite recruitment or open hiring, they still sell access to people. PivotHire is different: <b>we provide a fully managed, project-delivery service that sells guaranteed outcomes.</b>
+                            While there are new platforms focusing on elite recruitment or open hiring, they still sell access to people. PivotHire is different: <b>we provide a fully managed, project-delivery service that sells guaranteed outcomes.</b>
                         </p>
                     </ScrollReveal>
                 </div>
