@@ -32,7 +32,7 @@ export default function HeroSection() {
                     </span>
                 </h1>
                 <p className={styles.tagline}>
-                    We aim to revolutionize the global outsourcing and freelancing market with AI and Web3.
+                    PivotHire AI is building a high-trust network where quality-driven companies and skilled freelance professionals collaborate with confidence.
                 </p>
                 <PreviewSection />
                 <a href={'mailto:core@pivothire.tech'}>

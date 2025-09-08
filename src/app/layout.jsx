@@ -25,12 +25,12 @@ const geistMono = Geist({
 export const metadata = {
     title: {
         template: '%s | PivotHire AI',
-        default: 'PivotHire AI - Revolutionary Freelancing Platform',
+        default: 'PivotHire AI - Revolutionary Project Delivery Platform',
     },
 
     description: 'PivotHire AI is building a high-trust network where quality-driven companies and skilled freelance professionals collaborate with confidence.',
 
-    keywords: ['startup', 'tech', 'hiring', 'labor market', 'HR', 'AI', 'freelancing', 'job matching'],
+    keywords: ['startup', 'tech', 'hiring', 'labor market', 'HR', 'AI', 'freelancing', 'outsourcing', 'job matching'],
 
     authors: [{name: 'Kevin Zhong'}, {name: 'Richard Liu'}, {name: 'Konrad Pan'}],
 
@@ -39,7 +39,7 @@ export const metadata = {
     publisher: 'PivotHire AI',
 
     openGraph: {
-        title: 'PivotHire AI - Revolutionary Freelancing Platform',
+        title: 'PivotHire AI - Revolutionary Project Delivery Platform',
         description: 'PivotHire AI is building a high-trust network where quality-driven companies and skilled freelance professionals collaborate with confidence.',
         url: 'https://www.pivothire.tech/',
         siteName: 'PivotHire AI',
