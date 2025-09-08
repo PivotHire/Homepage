@@ -51,9 +51,7 @@ export default function FeaturesSection() {
                             matches, wasted hiring time, and unprotected freelancers facing wage theft.
                             <br/>
                             <br/>
-                            Low efficiency. Low trust. Low sustainability.
-                            <br/>
-                            <b>Current freelancing pattern will eventually fail under its own weight. </b>
+                            While new platforms focus on elite recruitment or open hiring, they still sell access to people. PivotHire is different: <b>we provide a fully managed, project-delivery service that sells guaranteed outcomes.</b>
                         </p>
                     </ScrollReveal>
                 </div>

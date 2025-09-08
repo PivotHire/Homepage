@@ -24,7 +24,7 @@ export default function HeroSection() {
         <section id="hero" className={styles.heroContainer}>
             <div className={styles.heroContent}>
                 <h1 className={styles.title}>
-                    <span className={styles.staticWord}>Freelancing,</span><br/>
+                    <span className={styles.staticWord}>Outsourcing,</span><br/>
                     <span className={styles.rollingWrapper}>
                         <span key={key} className={isExiting ? styles.exit : styles.enter}>
                             {word}
@@ -32,8 +32,7 @@ export default function HeroSection() {
                     </span>
                 </h1>
                 <p className={styles.tagline}>
-                    PivotHire AI is building a high-trust network<br /> where quality-driven companies and skilled freelance
-                    professionals collaborate with confidence.
+                    We aim to revolutionize the global outsourcing and freelancing market with AI and Web3.
                 </p>
                 <PreviewSection />
                 <a href={'mailto:core@pivothire.tech'}>
