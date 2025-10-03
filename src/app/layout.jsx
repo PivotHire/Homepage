@@ -24,31 +24,31 @@ const geistMono = Geist({
 
 export const metadata = {
     title: {
-        template: '%s | PivotHire AI',
-        default: 'PivotHire AI - Revolutionary Project Delivery Platform',
+        template: '%s | PivotHire',
+        default: 'PivotHire - Revolutionary Project Delivery Platform',
     },
 
-    description: 'PivotHire AI is building a high-trust network where quality-driven companies and skilled freelance professionals collaborate with confidence.',
+    description: 'PivotHire is building a high-trust network where quality-driven companies and skilled professionals collaborate with confidence.',
 
     keywords: ['startup', 'tech', 'hiring', 'labor market', 'HR', 'AI', 'freelancing', 'outsourcing', 'job matching'],
 
-    authors: [{name: 'Kevin Zhong'}, {name: 'Richard Liu'}, {name: 'Konrad Pan'}],
+    authors: [{name: 'Kevin Zhong'}, {name: 'Richard Liu'}],
 
-    creator: 'PivotHire AI',
+    creator: 'PivotHire Inc.',
 
-    publisher: 'PivotHire AI',
+    publisher: 'PivotHire Inc.',
 
     openGraph: {
-        title: 'PivotHire AI - Revolutionary Project Delivery Platform',
-        description: 'PivotHire AI is building a high-trust network where quality-driven companies and skilled freelance professionals collaborate with confidence.',
+        title: 'PivotHire - Revolutionary Project Delivery Platform',
+        description: 'PivotHire is building a high-trust network where quality-driven companies and skilled professionals collaborate with confidence.',
         url: 'https://www.pivothire.tech/',
-        siteName: 'PivotHire AI',
+        siteName: 'PivotHire',
         images: [
             {
                 url: 'https://www.pivothire.tech/og-image-light(1200x630).png',
                 width: 1200,
                 height: 630,
-                alt: 'PivotHire AI',
+                alt: 'PivotHire',
             },
         ],
         locale: 'en_US',

@@ -20,7 +20,7 @@ const teamMembers = [
         name: 'Richard Liu',
         role: 'Co-Founder',
         imageUrl: '/avatar/rl.jpg',
-        bio: 'UC Berkeley (Class of 2029)',
+        bio: 'University of California, Berkeley (Class of 2029)',
         li: 'https://www.linkedin.com/in/richard-yliu/',
     },
     {
@@ -33,11 +33,11 @@ const teamMembers = [
     },
     {
         id: 3,
-        name: 'Konrad Pan',
+        name: 'Tony Qiu',
         role: 'Co-Founder',
-        imageUrl: '/avatar/kp.jpg',
-        bio: 'Cornell University (Class of 2029)',
-        li: 'https://www.linkedin.com/in/shuyang-pan-b45143352/',
+        imageUrl: '/avatar/fq.jpeg',
+        bio: 'University of Illinois Urbana-Champaign (Class of 2029)',
+        li: 'https://www.linkedin.com/in/fuyuqiu/',
     },
 ];
 

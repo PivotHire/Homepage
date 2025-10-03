@@ -32,7 +32,7 @@ export default function HeroSection() {
                     </span>
                 </h1>
                 <p className={styles.tagline}>
-                    PivotHire AI is building a high-trust network where quality-driven companies and skilled freelance professionals collaborate with confidence.
+                    PivotHire is building a high-trust network where quality-driven companies and skilled professionals collaborate with confidence.
                 </p>
                 <PreviewSection />
                 <a href={'mailto:core@pivothire.tech'}>

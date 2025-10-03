@@ -70,7 +70,7 @@ export default function Footer() {
             <div className={styles.footerContent}>
                 <div className={styles.mainSection}>
                     <a href="/" className={styles.logo}>
-                        <img src={footerData.main.logoUrl} alt="PivotHire AI Logo" />
+                        <img src={footerData.main.logoUrl} alt="PivotHire Logo" />
                     </a>
                     <p className={styles.address}>{footerData.main.address}</p>
                     <div className={styles.certifications}>
@@ -79,7 +79,7 @@ export default function Footer() {
                         ))}
                     </div>
                     <p className={styles.copyrightText}>
-                        &copy; {currentYear} PivotHire AI
+                        &copy; 2024-{currentYear} PivotHire Inc.
                     </p>
                 </div>
 
