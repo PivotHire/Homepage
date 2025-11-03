@@ -79,7 +79,7 @@ export default function Footer() {
                         ))}
                     </div>
                     <p className={styles.copyrightText}>
-                        &copy; 2024-{currentYear} PivotHire Inc.
+                        &copy; {currentYear === 2025 ? 2025 : `2025-${currentYear}`} PivotHire Inc.
                     </p>
                 </div>
 
