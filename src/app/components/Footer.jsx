@@ -21,7 +21,7 @@ const footerData = {
         {
             title: 'Company',
             items: [
-                { text: 'About Us', href: '/about' },
+                { text: 'About Us', href: '#team' },
                 // { text: 'Blog', href: '/blog' },
                 // { text: 'Case Studies', href: '/case-studies' },
             ]
@@ -37,8 +37,8 @@ const footerData = {
         {
             title: 'Legal',
             items: [
-                // { text: 'Terms & Conditions', href: '/terms' },
-                { text: 'Privacy Policy', href: '/privacy-policy' },
+                { text: 'Terms of Use', href: 'https://app.pivothire.tech/terms-of-use' },
+                { text: 'Privacy Policy', href: 'https://app.pivothire.tech/privacy-policy' },
                 // { text: 'Cookie Policy', href: '/cookies' },
             ]
         }

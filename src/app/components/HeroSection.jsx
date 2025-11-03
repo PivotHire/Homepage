@@ -35,9 +35,14 @@ export default function HeroSection() {
                     PivotHire is building a high-trust network where quality-driven companies and skilled professionals collaborate with confidence.
                 </p>
                 <PreviewSection />
-                <a href={'mailto:core@pivothire.tech'}>
+                <a href="https://app.pivothire.tech/">
                     <button className={styles.ctaButton}>
-                        Request a Demo
+                        Get Started
+                    </button>
+                </a>
+                <a href="mailto:core@pivothire.tech">
+                    <button className={styles.ctaButton}>
+                        Book a Call
                     </button>
                 </a>
             </div>
