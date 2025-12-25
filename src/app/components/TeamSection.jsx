@@ -33,11 +33,11 @@ const teamMembers = [
     },
     {
         id: 3,
-        name: 'Tony Qiu',
+        name: 'Joshua Chen',
         role: 'Co-Founder',
-        imageUrl: '/avatar/fq.jpeg',
-        bio: 'University of Illinois Urbana-Champaign (Class of 2029)',
-        li: 'https://www.linkedin.com/in/fuyuqiu/',
+        imageUrl: '/avatar/jc.jpeg',
+        bio: 'University of Illinois Urbana-Champaign (Class of 2027)',
+        li: 'https://www.linkedin.com/in/joshua-chen-267ab7237/',
     },
 ];
 
