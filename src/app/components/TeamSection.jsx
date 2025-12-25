@@ -19,7 +19,7 @@ const teamMembers = [
         id: 1,
         name: 'Richard Liu',
         role: 'Co-Founder',
-        imageUrl: '/avatar/rl.jpg',
+        imageUrl: '/avatar/rl.jpeg',
         bio: 'University of California, Berkeley (Class of 2029)',
         li: 'https://www.linkedin.com/in/richard-yliu/',
     },
